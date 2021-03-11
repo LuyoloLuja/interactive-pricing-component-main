@@ -6,13 +6,116 @@ body {
     background-image: url(../images/bg-pattern.svg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-size: 15px;
 }
 .container {
-    width: 50%;
+    width: 45%;
     border: 1px solid red;
+    box-sizing: border-box;
     margin: 0 auto;
     height: 100vh;
 }
 header {
+    height: 30vh;
+    padding: 2em 0;
+    box-sizing: border-box;
+    color: hsl(227, 35%, 25%);
     background-image: url(../images/pattern-circles.svg);
+    background-repeat: no-repeat;
+    line-height: 1em;
+    text-align: center;
+    background-position: center;
+}
+header h1 { font-weight: 800; }
+p {
+    color: hsl(225, 20%, 60%);
+    font-weight: 600;
+}
+section {
+    box-sizing: border-box;
+    border: 1px solid blue;
+    padding: 3em;
+    box-shadow: 0 0 10px 5px hsl(223, 50%, 87%);
+    -webkit-box-shadow: 0 0 10px 5px hsl(223, 50%, 87%);
+    -moz-box-shadow: 0 0 10px 5px hsl(223, 50%, 87%);
+}
+.price-per-views {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.price-per-views p {
+    font-size: 17px;
+}
+.price-per-views div {
+    box-sizing: border-box;
+    display: flex;
+}
+.price-per-views h2 {
+    box-sizing: border-box;
+    font-size: 36px;
+    margin: 0;
+    padding: 0 5px 0 0;
+    color: hsl(227, 35%, 25%);
+}
+.price-per-views div p { font-size: 15px; }
+.range { margin: 2em 0; }
+.range input {
+    width: 100%;
+    -webkit-appearance: none;
+    background-color:hsl(224, 65%, 95%);
+    border-radius: 5px;
+    height: 8px;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+}
+.range input:hover {
+    opacity: 1;
+}
+.range input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 35px;
+    height: 35px;
+    border: 0;
+    background: url("../images/icon-slider.svg") no-repeat center;
+    background-color: hsl(174, 85%, 49%);
+    border-radius: 100%;
+    cursor: pointer;
+  }
+  .range input::-moz-range-thumb {
+    width: 40px;
+    height: 20px;
+    background: url("../images/icon-slider.svg");
+    background-color: hsl(174, 95%, 50%);
+    cursor: pointer;
+  }
+  input[type="range"]::-ms-fill-lower {
+    height: max(calc(1em - 1px - 1px), 0px);
+    border-radius: 0.5em 0 0 0.5em;
+    margin: -1px 0 -1px -1px;
+    background: #f81200;
+    border: 1px solid #b2b2b2;
+    border-right-width: 0;
+  }
+.bill-types {
+    display: flex;
+    justify-content: flex-end;
+}
+.bill-types p, .bill-types div { margin-left: 1em; }
+.checkbox {
+    display: block;
+    background-color: red;
+    height: 10%;
+    width: 5%;
+    margin: 12px 0;
+    padding: 5px 10px;
+}
+.discount {
+    color: hsl(15, 100%, 70%);
+    background-color: hsl(14, 92%, 95%);
+    font-size: 13px;
+    padding: 2px;
 }
