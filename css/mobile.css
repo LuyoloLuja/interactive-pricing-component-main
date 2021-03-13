@@ -46,7 +46,7 @@
       }
       .bill-types {
         font-size: 11px;
-        justify-content: center;
+        justify-content: space-between;
       }
       .negative-sign { display: inline; }
       .discount-text { display: none; }
