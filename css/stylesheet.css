@@ -94,6 +94,7 @@ section {
   outline: none;
   background: linear-gradient(to right, var(--full-slider-bar) 0%, var(--full-slider-bar) 50%, var(--empty-slider-bar) 50%, var(--empty-slider-bar) 100%);
   -webkit-transition: 0.2s;
+  cursor: pointer;
 }
 .range input:hover {
   opacity: 0.8;
