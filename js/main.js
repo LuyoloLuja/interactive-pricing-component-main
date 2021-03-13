@@ -46,11 +46,11 @@ function calculateRange(value) {
 function toggleCheckBox() {
   const value = (rangeInputElement.value - rangeInputElement.min) / (rangeInputElement.max - rangeInputElement.min) * 100;
   
-  if (value === 100) { viewsPrice.textContent = `$${(discount / 100) * priceRanges[4].price}` }
-  if (value === 75 || checkboxElement.checked) { viewsPrice.textContent = `$${(discount / 100) * priceRanges[3].price}` }
-  if (value === 50 || checkboxElement.checked) { viewsPrice.textContent = `$${(discount / 100) * priceRanges[2].price}` }
-  if (value === 25 || checkboxElement.checked) { viewsPrice.textContent = `$${(discount / 100) * priceRanges[2].price}` }
-  if (value === 0 || checkboxElement.checked) { viewsPrice.textContent = `$${(discount / 100) * priceRanges[0].price}` }
+  if (value === 100 || checkboxElement.checked) { viewsPrice.textContent = `$${(discount / 100) * priceRanges[4].price.toFixed(2)}` }
+  if (value === 75 || checkboxElement.checked) { viewsPrice.textContent = `$${(discount / 100) * priceRanges[3].price.toFixed(2)}` }
+  if (value === 50 || checkboxElement.checked) { viewsPrice.textContent = `$${(discount / 100) * priceRanges[2].price.toFixed(2)}` }
+  if (value === 25 || checkboxElement.checked) { viewsPrice.textContent = `$${(discount / 100) * priceRanges[2].price.toFixed(2)}` }
+  if (value === 0 || checkboxElement.checked) { viewsPrice.textContent = `$${(discount / 100) * priceRanges[0].price.toFixed(2)}` }
 }
 
 // EVENT LISTENERS

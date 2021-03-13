@@ -16,12 +16,17 @@ body {
 }
 .change-price {
   color: hsl(174, 85%, 49%);
-  animation-duration: 3s;
-  animation-name: change;
+  animation: change 2s ease forwards;
 }
 @keyframes change {
-  from { color: hsl(174, 85%, 49%); }
-  to { color: hsl(174, 85%, 49%); }
+  0% {
+    opacity: 0.5;
+    color: hsl(174, 85%, 49%);
+  }
+  100% {
+    /* opacity: 0;
+    pointer-events: none; */
+  }
 }
 .container {
   width: 40%;
