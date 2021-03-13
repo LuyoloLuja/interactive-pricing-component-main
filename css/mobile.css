@@ -16,9 +16,12 @@
       }
       section {
         padding: 1em;
-        box-shadow: 0 0 90px 1px hsl(223, 50%, 87%);
-        -webkit-box-shadow: 0 0 90px 1px hsl(223, 50%, 87%);
-        -moz-box-shadow: 0 0 90px 1px hsl(223, 50%, 87%);
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+      }
+      .range input::-webkit-slider-thumb {
+          box-shadow: none;
       }
       .range { margin: 1em 0; }
       .views-container {
