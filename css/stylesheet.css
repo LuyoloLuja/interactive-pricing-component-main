@@ -1,6 +1,8 @@
 :root {
   --empty-slider-bar: hsl(224, 65%, 95%);
   --full-slider-bar: hsl(174, 77%, 80%);
+  --empty-slider-bar: hsl(224, 65%, 95%);
+  --full-slider-bar: hsl(174, 77%, 80%);
 }
 body {
   margin: 0;
