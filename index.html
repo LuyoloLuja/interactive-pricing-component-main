@@ -21,26 +21,34 @@
   <title>Interactive pricing component</title>
 
   <link rel="stylesheet" href="./css/stylesheet.css" />
+  <link rel="stylesheet" href="./css/mobile.css" />
 </head>
 
 <body>
   <div class="container">
     <header>
-      <h1>Simple, traffic-based pricing</h1>
-      <p>Sign-up for our 30-day trial. No credit card required.</p>
+      <div>
+        <h1>Simple, traffic-based pricing</h1>
+        <p>
+          Sign-up for our 30-day trial. <span></span>
+          No credit card required.
+        </p>
+      </div>
     </header>
 
     <section>
-      <div class="price-per-views">
-        <p class="page-views"></p>
-        <div>
-          <h2 class="views-price"></h2>
-          <p>/ month</p>
+      <div class="views-container">
+        <div class="price-per-views">
+          <p class="page-views"></p>
+          <div class="monthly-container">
+            <h2 class="views-price"></h2>
+            <p>/ month</p>
+          </div>
         </div>
-      </div>
 
-      <div class="range">
-        <input oninput="rangeToTakeFiveValues(this)" type="range" min="1" max="5" value="3" class="range-input" />
+        <div class="range">
+          <input oninput="rangeToTakeFiveValues(this)" type="range" min="1" max="5" value="3" class="range-input" />
+        </div>
       </div>
 
       <div class="bill-types">
@@ -49,7 +57,7 @@
           <input type="checkbox" class="checkbox-input" />
         </div>
         <p>Yearly Billing</p>
-        <p class="discount">25% discount</p>
+        <p class="discount"><span class="negative-sign">-</span> 25% <span class="discount-text">discount</span></p>
       </div>
 
       <div class="benefits">

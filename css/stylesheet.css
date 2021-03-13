@@ -30,7 +30,6 @@ body {
 }
 header {
   height: 30vh;
-  padding: 2em 0;
   box-sizing: border-box;
   color: hsl(227, 35%, 25%);
   background-image: url(../images/pattern-circles.svg);
@@ -38,6 +37,11 @@ header {
   line-height: 1em;
   text-align: center;
   background-position: center;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 header h1 {
   font-weight: 800;
@@ -58,9 +62,8 @@ section {
   display: flex;
   justify-content: space-between;
 }
-.price-per-views p {
-  font-size: 17px;
-}
+.page-views,
+.monthly-container  { font-size: 17px; }
 .price-per-views div {
   box-sizing: border-box;
   display: flex;
@@ -71,9 +74,6 @@ section {
   margin: 0;
   padding: 0 5px 0 0;
   color: hsl(227, 35%, 25%);
-}
-.price-per-views div p {
-  font-size: 15px;
 }
 .range {
   margin: 2em 0;
@@ -126,6 +126,7 @@ section {
 .bill-types div {
   margin-left: 1em;
 }
+.negative-sign { display: none; }
 .checkbox {
   display: block;
   margin: 10px 0;

@@ -1,0 +1,72 @@
+@media only screen and (max-width: 600px){
+    body {
+        font-size: 12px;
+      }
+      .container {
+        width: 90%;
+      }
+      header {
+        height: 30vh;
+      }
+       header h1 {
+        font-size: 1.25rem;
+      }
+      header p span {
+        display: block;
+      }
+      section {
+        padding: 1em;
+        box-shadow: 0 0 90px 1px hsl(223, 50%, 87%);
+        -webkit-box-shadow: 0 0 90px 1px hsl(223, 50%, 87%);
+        -moz-box-shadow: 0 0 90px 1px hsl(223, 50%, 87%);
+      }
+      .range { margin: 1em 0; }
+      .views-container {
+        height: 20vh;
+        width: 100%;
+        position: relative;
+      }
+     .price-per-views {
+         text-align: center;
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+      }
+      .price-per-views h2 { font-size: 24px; }
+      .monthly-container p { font-size: 12px; }
+      .monthly-container {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translate(-50%);
+      }
+      .bill-types {
+        font-size: 11px;
+        justify-content: center;
+      }
+      .negative-sign { display: inline; }
+      .discount-text { display: none; }
+      .discount {
+        height: unset;
+        font-size: 11px;
+      }
+      .checkbox {
+        margin: 0;
+        padding: 5px 10px;
+      }
+      .benefits {
+          display: block;
+          margin: 1.5em auto;
+          width: 100%;
+      }
+      ul {
+        display: block;
+          margin: 1em auto;
+          width: fit-content;
+      }
+      .benefits aside button {
+          display: block;
+          margin: 1em auto;
+      }
+      
+}
