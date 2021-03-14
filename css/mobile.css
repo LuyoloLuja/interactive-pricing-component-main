@@ -72,5 +72,11 @@
           display: block;
           margin: 1em auto;
       }
+      footer {
+        font-size: 10px;
+        left: 50%;
+        transform: translate(-50%);
+        width: 80%;
+      }
       
 }
